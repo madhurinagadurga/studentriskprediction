@@ -1,0 +1,11 @@
+StudentID,Name,Department,Gender,GPA,Attendance,FeeBalance,Semester
+STU0001,John Smith,Computer Science,Male,3.45,88,0,3
+STU0002,Emma Johnson,Engineering,Female,2.89,75,1200,5
+STU0003,Michael Brown,Business,Male,3.78,92,0,2
+STU0004,Sophia Davis,Medicine,Female,3.21,81,0,6
+STU0005,James Wilson,Arts,Male,2.45,68,2500,4
+STU0006,Olivia Martinez,Science,Female,3.67,90,0,1
+STU0007,William Anderson,Computer Science,Male,2.98,78,500,7
+STU0008,Ava Taylor,Engineering,Female,3.34,85,0,3
+STU0009,Robert Thomas,Business,Male,2.56,70,1800,5
+STU0010,Isabella Garcia,Medicine,Female,3.89,95,0,2
