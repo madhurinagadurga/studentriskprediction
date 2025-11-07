@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Risk Dashboard - Access Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+            color: #e4e6eb;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin: 0 auto 1rem;
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #fbbf24;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h2 {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #f59e0b;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .access-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+            margin: 1rem 0;
+        }
+        
+        .access-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.6);
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .feature-item {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .feature-item h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+        
+        code {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            color: #fbbf24;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .code-block {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            overflow-x: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .code-block pre {
+            color: #10b981;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+        
+        .note {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+        }
+        
+        .warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+        }
+        
+        .success {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            border-top: 2px solid rgba(245, 158, 11, 0.3);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">NS</div>
+            <h1>Student Risk Prediction Dashboard</h1>
+            <p class="subtitle">Professional Analytics System for Academic Risk Assessment</p>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Access Your Dashboard</h2>
+            <p style="margin-bottom: 1.5rem;">Your complete Student Risk Prediction Dashboard is ready to use!</p>
+            <div style="text-align: center;">
+                <a href="/dashboard/" class="access-btn">Launch Dashboard →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>✨ Dashboard Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4>📊 10+ Interactive Charts</h4>
+                    <p>Risk distribution, GPA analysis, attendance tracking, and more</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🔍 Dynamic Filtering</h4>
+                    <p>Filter by department, gender, risk level, and semester</p>
+                </div>
+                <div class="feature-item">
+                    <h4>👥 Student Profiles</h4>
+                    <p>Detailed view of individual student performance metrics</p>
+                </div>
+                <div class="feature-item">
+                    <h4>📈 Real-time KPIs</h4>
+                    <p>Track average GPA, attendance, and high-risk percentages</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🎨 Modern Design</h4>
+                    <p>Professional academic theme with smooth animations</p>
+                </div>
+                <div class="feature-item">
+                    <h4>📱 Fully Responsive</h4>
+                    <p>Works perfectly on desktop, tablet, and mobile devices</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📂 Files Location</h2>
+            <p>Your dashboard files are located at:</p>
+            <div class="code-block">
+                <pre>/app/frontend/public/dashboard/
+├── index.html          # Dashboard interface
+├── style.css          # Modern styling
+├── script.js          # Interactive features
+├── data/
+│   └── Student_Risk_Dataset_2200.csv
+└── README.md          # Full documentation</pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🚀 GitHub Pages Deployment Guide</h2>
+            
+            <h3>Step 1: Prepare Your Files</h3>
+            <ol>
+                <li>Copy all files from <code>/app/frontend/public/dashboard/</code></li>
+                <li>Create a new folder on your computer named <code>student-risk-dashboard</code></li>
+                <li>Place all dashboard files in this folder</li>
+            </ol>
+
+            <h3>Step 2: Initialize Git Repository</h3>
+            <div class="code-block">
+                <pre>cd student-risk-dashboard
+git init
+git add .
+git commit -m "Initial commit: Student Risk Dashboard"</pre>
+            </div>
+
+            <h3>Step 3: Push to GitHub</h3>
+            <ol>
+                <li>Create a new repository on GitHub (e.g., <code>student-risk-dashboard</code>)</li>
+                <li>Push your code:</li>
+            </ol>
+            <div class="code-block">
+                <pre>git remote add origin https://github.com/YOUR_USERNAME/student-risk-dashboard.git
+git branch -M main
+git push -u origin main</pre>
+            </div>
+
+            <h3>Step 4: Enable GitHub Pages</h3>
+            <ol>
+                <li>Go to your repository on GitHub</li>
+                <li>Click <strong>Settings</strong> → <strong>Pages</strong></li>
+                <li>Under "Source", select branch: <strong>main</strong></li>
+                <li>Click <strong>Save</strong></li>
+                <li>Wait 1-2 minutes for deployment</li>
+            </ol>
+
+            <div class="success">
+                <strong>✅ Your dashboard will be live at:</strong><br>
+                <code>https://YOUR_USERNAME.github.io/student-risk-dashboard/</code>
+            </div>
+
+            <h3>Alternative: Quick Deploy with Netlify</h3>
+            <ol>
+                <li>Visit <a href="https://app.netlify.com/drop" style="color: #60a5fa;">Netlify Drop</a></li>
+                <li>Drag your <code>student-risk-dashboard</code> folder</li>
+                <li>Get instant deployment URL</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>📊 Using Your Own Dataset</h2>
+            
+            <div class="warning">
+                <strong>⚠️ Important:</strong> If you uploaded your own <code>Student_Risk_Dataset_2200.xlsx</code>, you need to convert it to CSV format.
+            </div>
+
+            <h3>Converting Excel to CSV</h3>
+            <ol>
+                <li>Open your Excel file</li>
+                <li>Click <strong>File</strong> → <strong>Save As</strong></li>
+                <li>Choose format: <strong>CSV (Comma delimited)</strong></li>
+                <li>Save as <code>Student_Risk_Dataset_2200.csv</code></li>
+                <li>Replace the file in <code>data/</code> folder</li>
+            </ol>
+
+            <h3>Required CSV Format</h3>
+            <div class="code-block">
+                <pre>StudentID,Name,Department,Gender,GPA,Attendance,FeeBalance,Semester
+STU0001,John Smith,Computer Science,Male,3.45,88,0,3
+STU0002,Emma Johnson,Engineering,Female,2.89,75,1200,5</pre>
+            </div>
+
+            <div class="note">
+                <strong>📝 Note:</strong> Currently using mock data (2200 students). Replace with your actual data for production use.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🔧 Risk Score Calculation</h2>
+            <p>The dashboard calculates student risk using a weighted formula:</p>
+            <div class="code-block">
+                <pre>Risk Score = (0.5 × GPA_Component + 0.3 × Attendance_Component + Financial_Flag) × 100
+
+Components:
+- GPA Component = (4.0 - Student_GPA) / 4.0
+- Attendance Component = (100 - Student_Attendance) / 100
+- Financial Flag = 0.15 if Fee Balance > 0, else 0
+
+Risk Categories:
+- Low Risk: Score < 30
+- Medium Risk: Score 30-60
+- High Risk: Score > 60</pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>💡 Dashboard Navigation</h2>
+            <ul>
+                <li><strong>Overview Tab:</strong> KPIs, risk distribution, department analysis, scatter plots, and trends</li>
+                <li><strong>Risk Analysis Tab:</strong> Advanced risk heatmaps and detailed distribution charts</li>
+                <li><strong>Student Profiles Tab:</strong> Sortable table with search, pagination, and individual student modals</li>
+            </ul>
+
+            <h3>Using Filters</h3>
+            <ul>
+                <li>Select filters from dropdown menus at the top</li>
+                <li>All charts and KPIs update automatically</li>
+                <li>Click "Reset All Filters" to clear selections</li>
+                <li>Use search bar to find specific students</li>
+            </ul>
+
+            <h3>Viewing Student Details</h3>
+            <ol>
+                <li>Navigate to "Student Profiles" tab</li>
+                <li>Click "View" button on any student row</li>
+                <li>Modal popup shows complete profile with radar chart</li>
+                <li>Click "×" or outside modal to close</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>🎨 Customization Options</h2>
+            
+            <h3>Change Color Theme</h3>
+            <p>Edit <code>style.css</code> to customize colors:</p>
+            <ul>
+                <li>Primary gradient: <code>#1e3a5f</code> to <code>#2c5282</code> (navy blue)</li>
+                <li>Accent color: <code>#f59e0b</code> (gold)</li>
+                <li>Background: <code>#0f1419</code> to <code>#1a2332</code></li>
+            </ul>
+
+            <h3>Modify Risk Thresholds</h3>
+            <p>Edit <code>script.js</code> function <code>computeRiskScore()</code>:</p>
+            <div class="code-block">
+                <pre>if (risk < 30) category = 'Low';      // Adjust threshold
+else if (risk < 60) category = 'Medium'; // Adjust threshold  
+else category = 'High';</pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📞 Technical Support</h2>
+            <div class="note">
+                <strong>Need Help?</strong>
+                <ul style="margin-top: 0.5rem;">
+                    <li>Check browser console (F12) for errors</li>
+                    <li>Verify CSV file is in correct format</li>
+                    <li>Ensure Chart.js and PapaParse CDN links are loading</li>
+                    <li>Test on latest Chrome, Firefox, or Edge browser</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Nexus Strategies | Student Risk Prediction System</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Built with HTML, CSS, and JavaScript • Ready for GitHub Pages</p>
+        </div>
+    </div>
+</body>
+</html>
